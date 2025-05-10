@@ -268,3 +268,210 @@
 //     return "it's a good day";
 //   }
 // }
+
+//46-task
+// function tushir(arr: number[], num: number) {
+//   return arr.slice(num);
+// }
+// console.log(tushir([1, 2, 3, 4, 5], 1));
+
+//47-task
+// function ovozlar(obj: { upvotes: number; downvotes: number }): number {
+//   return obj.upvotes - obj.downvotes;
+// }
+
+// console.log(ovozlar({ upvotes: 13, downvotes: 0 }));
+
+//48-task
+// function negative(num: number) {
+//   if (num > 0) {
+//     return num * -1;
+//   } else {
+//     return num;
+//   }
+// }
+// console.log(negative(-4));
+
+//49-task
+// function teskariMassiv(massiv) {
+//   return massiv.reverse();
+// }
+
+// console.log(teskariMassiv([1, 2, 3, 4, 5]));
+
+//50-task
+// function kinoKirishYokiYoq(yosh: number, otaOnasiBilan: boolean): boolean {
+//   return yosh >= 15 && otaOnasiBilan;
+// }
+
+//51-task
+// function birQosh(massiv: number[]): number[] {
+//   return massiv.map((son) => son + 1);
+// }
+
+//52-task
+// const ism: string = "Ali";
+// const yosh: number = 18;
+
+// const matn: string = `Salom, mening ismim ${ism} va men ${yosh} yoshdaman.`;
+
+// console.log(matn);
+
+//53-task
+// let yosh = 18;
+// let natija: string = yosh >= 18 ? "Katta yoshdagilar" : "Voyaga yetmaganlar";
+
+//54-task
+// function uzunligiJuftmi(matn: string): boolean {
+//     return matn.length % 2 === 0 ? true : false;
+//   }
+
+//55-task
+// const daraja = (n: number, m: number): number => n ^ m;
+// console.log(daraja(2, 3));
+
+//56-task
+// function songiElement<T>(massiv: T[]): T | undefined {
+//     return massiv[massiv.length - 1];
+//   }
+
+//57-task
+// function kabisaYilmi(yil: number): boolean {
+//     return (yil % 4 === 0 && yil % 100 !== 0) || (yil % 400 === 0);
+//   }
+
+//58-task
+// function birinchiHarfiniOlmasdanSoz(soz: string): string {
+//     return soz.slice(1);
+//   }
+
+//59-task
+// function teskariBoolean(qiymat: boolean): boolean {
+//     return !qiymat;
+//   }
+
+//60-task
+// function sonlar(n: number): string {
+//   if (n % 2 == 0) {
+//     return "juft";
+//   } else {
+//     return "toq";
+//   }
+// }
+
+//61-task
+// function qutilarSoniniTop(qavat: number): number {
+//     let total = 0;
+//     for (let i = 1; i <= qavat; i++) {
+//       total += (i * (i + 1)) / 2;
+//     }
+//     return total;
+//   }
+
+//62-task
+// function massivniStringgaOzgartir(massiv: (string | number)[]): string {
+//     return massiv.join(' ');
+//   }
+//63-task
+
+// function massivBirlashtir(massiv1: number[], massiv2: number[]): number[] {
+//     return [...massiv1, ...massiv2];
+//   }
+
+//64-task
+// function elementIndexiniTop(massiv: (string | number)[], element: string | number): number {
+//     return massiv.indexOf(element);
+//   }
+
+//65-task
+// function indexdagiElement(massiv: (string | number)[], index: number): string | number {
+//     const yaxlitlanganIndex = Math.floor(index);
+//     return massiv[yaxlitlanganIndex];
+//   }
+
+//66-task
+// function massivYigindisi(massiv: number[]): number {
+//     return massiv.reduce((yigindi, element) => yigindi + element, 0);
+//   }
+
+//67-task
+// function sozdanRaqamga(soz: string): number | undefined {
+//     const raqamlar: { [key: string]: number } = {
+//       "bir": 1,
+//       "ikki": 2,
+//       "uch": 3,
+//       "to’rt": 4,
+//       "besh": 5,
+//       "olti": 6,
+//       "yetti": 7,
+//       "sakkiz": 8,
+//       "to’qqiz": 9
+//     };
+
+//     return raqamlar[soz.toLowerCase()];
+//   }
+
+//68-task
+// function massivdaMiqyosBormi(massiv: number[], son: number): boolean {
+//     return massiv.includes(son);
+//   }
+
+//69-task
+// function sonlarniStringgaOzgartir(massiv: (number | string)[]): (string | string[])[] {
+//     return massiv.map(element => typeof element === 'number' ? element.toString() : element);
+//   }
+
+//70-task
+// function kubikchalarSoni(qator: number): number {
+//   return Math.pow(qator, 3);
+// }
+
+//71-task
+// function avtomobillarSoni(odamlarSon: number): number {
+//   return Math.ceil(odamlarSon / 5);
+// }
+
+//72-task
+// function boshJoyMavjudmi(soz: string): boolean {
+//   return soz.includes(" ");
+// }
+
+//73-task
+// function hajmHisobla(quti: { balandlik: number, eni: number, uzunlik: number }): number {
+//     return quti.balandlik * quti.eni * quti.uzunlik;
+//   }
+
+//74-task
+// function ajratibOl(son1: number, son2: number, massiv: number[]): number[] {
+//     return massiv.filter(son => son > son1 && son < son2);
+//   }
+
+//75-task
+// function elementTurlari(massiv: any[]): string[] {
+//   return massiv.map((element) => typeof element);
+// }
+//76-task
+// function qaytaYoz(soz: string, mqt: number): string {
+//     return soz.repeat(mqt);
+//   }
+
+//77-task
+// function koplikdaMi(soz: string): boolean {
+//   return soz.endsWith("lar") || soz.endsWith("er");
+// }
+
+//78-task
+// function boshVaOxirgiHarf(soz: string): string {
+//   return soz[0] + soz[soz.length - 1];
+// }
+//79-task
+// function talaffuzQiyin(soz: string): string {
+//   const boshHarflar = soz.slice(0, 2);
+//   const qolganSoz = soz.slice(2);
+//   return `${boshHarflar}... ${boshHarflar}... ${qolganSoz}`;
+// }
+
+//80-task
+// function ahvol(soz: string = "neutral"): string {
+//     return `Today, I am feeling ${soz}`;
+//   }
